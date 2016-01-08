@@ -1,0 +1,43 @@
+2016-01-04 16:02:54 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:02:54 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:02:54 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:02:54 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:03:38 INFO  Migrator:130 - Starting migration.
+2016-01-04 16:03:39 INFO  Migrator:310 - Running FITS on 40s.html
+2016-01-04 16:03:39 INFO  Migrator:310 - Running FITS on 40s.xml
+2016-01-04 16:03:40 INFO  Migrator:310 - Running FITS on CITIES.html
+2016-01-04 16:03:40 INFO  Migrator:310 - Running FITS on CITIES.xml
+2016-01-04 16:03:40 INFO  Migrator:310 - Running FITS on county.html
+2016-01-04 16:03:41 INFO  Migrator:310 - Running FITS on county.xml
+2016-01-04 16:03:41 INFO  Migrator:310 - Running FITS on Lakes.html
+2016-01-04 16:03:41 INFO  Migrator:310 - Running FITS on Lakes.xml
+2016-01-04 16:03:42 INFO  Migrator:310 - Running FITS on ROADS.html
+2016-01-04 16:03:42 INFO  Migrator:310 - Running FITS on ROADS.xml
+2016-01-04 16:03:42 INFO  Migrator:310 - Running FITS on SECTIONS.html
+2016-01-04 16:03:43 INFO  Migrator:310 - Running FITS on SECTIONS.xml
+2016-01-04 16:03:43 INFO  Migrator:310 - Running FITS on TOWNSHIPS.html
+2016-01-04 16:03:43 INFO  Migrator:310 - Running FITS on TOWNSHIPS.xml
+2016-01-04 16:07:00 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:07:00 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:07:00 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:07:00 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:07:18 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:07:18 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:07:19 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:07:19 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:08:54 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:08:54 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:08:54 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:08:54 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:12:47 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:12:47 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:12:47 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:12:47 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:15:20 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:15:20 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:15:20 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:15:20 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:18:54 INFO  DataAccessioner:60 - Starting application.
+2016-01-04 16:18:54 INFO  DataAccessioner:111 - Starting FITS
+2016-01-04 16:18:54 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8
+2016-01-04 16:18:54 ERROR ToolBelt:79 - Thread 1 error initializing edu.harvard.hul.ois.fits.tools.droid.Droid: edu.harvard.hul.ois.fits.exceptions.FitsToolException  Message: DROID cannot run under Java 8

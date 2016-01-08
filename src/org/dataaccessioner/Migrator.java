@@ -36,6 +36,9 @@ import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.Level;
+import org.apache.log4j.Logger;
 import org.openide.util.Exceptions;
 
 /**
@@ -56,6 +59,7 @@ public class Migrator {
 
     private static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS");
 
+    private static Logger logger;
     private String statusMessage = "";
     private int status = STATUS_INITIALIZING;
     private List<String> warnings = new ArrayList<String>();
@@ -68,8 +72,11 @@ public class Migrator {
     private MetadataManager metadataManager = null;
     private HashSet excludedItems = new HashSet(); //Hash key is the file's absolute path
 
+
     public Migrator() {
-        
+        System.setProperty("log4j.configuration", Fits.FITS_TOOLS + "log4j.properties");
+        logger = Logger.getLogger(this.getClass());
+        PropertyConfigurator.configure("tools/log4j.properties");
     }
 
     public void setFits(Fits fits) {
@@ -79,7 +86,7 @@ public class Migrator {
     public void setMetadataManager(MetadataManager metadataManager) {
         this.metadataManager = metadataManager;
     }
-    
+
     public boolean willOverwriteExisting() {
         return optionOverwriteExisting;
     }
@@ -128,7 +135,9 @@ public class Migrator {
         }
         try {
             status = STATUS_RUNNING;
+            logger.info("Starting migration for: " + source.getPath());
             status = processDirectory(source, destination);
+            logger.info("Finished migration for: " + source.getPath());
             metadataManager.close();
         } catch (FileNotFoundException ex) {
             setStatusMessage(ex.getLocalizedMessage());
@@ -300,6 +309,7 @@ public class Migrator {
 
                 FitsOutput fout = fits.examine(toProcess);
                 System.out.println(statusMessage);
+                logger.info(statusMessage);
                 metadataManager.addDocumentXSLT(fout.getFitsXml());
             } catch (FitsException ex) {
                 Exceptions.printStackTrace(ex);
@@ -334,26 +344,26 @@ public class Migrator {
                     + aDirectory);
         }
     }
-    
+
     /**
      * Checks if a file in question has been marked to be skipped
      * during migration.
-     * 
+     *
      * @param file
      * @return if the file should be skipped.
      */
     public boolean isExcluded(File file){
         return excludedItems.contains(file.getAbsolutePath());
     }
-    
+
     /**
      * Mark a file to be excluded during migration.
-     * 
+     *
      * @param file the file to be skipped.
      */
     public void addExclusion(File file){
         excludedItems.add(file.getAbsolutePath());
     }
-    
-    
+
+
 }

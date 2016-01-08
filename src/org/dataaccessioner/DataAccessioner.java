@@ -34,7 +34,7 @@ import org.apache.commons.cli.Option;
 import org.apache.commons.cli.OptionGroup;
 import org.apache.commons.cli.Options;
 import org.apache.commons.cli.ParseException;
-import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.PropertyConfigurator;
 import org.apache.log4j.Level;
 import org.apache.log4j.Logger;
 import org.openide.util.Exceptions;
@@ -46,7 +46,7 @@ import org.openide.util.Exceptions;
 public class DataAccessioner {
 
     private static final String NAME = "DataAccessioner";
-    private static final String VERSION = "1.0";
+    private static final String VERSION = "1.0.1";
     private static Logger logger;
 
     private Fits fits;
@@ -56,8 +56,8 @@ public class DataAccessioner {
     public DataAccessioner() {
         System.setProperty("log4j.configuration", Fits.FITS_TOOLS + "log4j.properties");
         logger = Logger.getLogger(this.getClass());
-        BasicConfigurator.configure();
-        logger.setLevel(Level.INFO);
+        PropertyConfigurator.configure("tools/log4j.properties");
+        logger.info("Starting application.");
 
         //May eventually setup some other configuration stuff here.
         //FITS is not initialized here because it takes some time to start
@@ -200,10 +200,12 @@ public class DataAccessioner {
                 sourceDestination.mkdirs();
                 switch (migrator.run(source, sourceDestination)) {
                     case Migrator.STATUS_FAILURE:
+                        logger.info("Migration failed: " + migrator.getStatusMessage());
                         System.err.println("Migration failed! "
                                 + migrator.getStatusMessage());
                         break;
                     case Migrator.STATUS_SUCCESS:
+                        logger.info("Migration completed successfully!");
                         System.out.println("Migration completed successfully!");
                 }
 
